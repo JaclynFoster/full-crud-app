@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Patterns</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+    <h1>Add a Pattern</h1>
+    <form id="form-container">
+       <label id="name-label">Name:</label>
+       <input id="name"/>
+       <label id="price-label">Price:</label>
+       <input id="price"/>
+       <label id="image-label">Image URL:</label>
+       <input id="image"/>
+       <label id="pattern-label">Pattern URL:</label>
+       <input id="pattern"/>
+       <button id="submit-btn">Submit</button>
+    </form>
+    <div id="modal"></div>
+    <section id="pattern-container">
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+    </main>
+</body>
+</html>
