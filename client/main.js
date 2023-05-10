@@ -14,6 +14,8 @@ const showPatterns = pattern => {
   let deleteBtn = document.createElement('button')
   let patternCard = document.createElement('div')
   patternCard.classList.add('pattern-card')
+  deleteBtn.classList.add("delete")
+  editBtn.classList.add("edit")
   editBtn.textContent = 'Edit'
 
   deleteBtn.textContent = 'Delete'
@@ -23,7 +25,7 @@ const showPatterns = pattern => {
   patternCard.innerHTML = `
     <img src=${pattern.imageURL} class="pattern-img"/>
     <h3 class="pattern-name">${pattern.name}</h3>
-    <h4>Price: ${pattern.price}</h4>
+    <h4>Price: $${pattern.price}</h4>
     <a target="_blank" href="${pattern.patternURL}">Pattern Link</a>`
   editBtn.onclick = () => {
     openModal(pattern)
