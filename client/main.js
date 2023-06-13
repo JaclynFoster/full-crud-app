@@ -105,6 +105,8 @@ const openModal = patternObj => {
   let modalImageInput = document.createElement('input')
   let modalPatternInput = document.createElement('input')
   let modalBtn = document.createElement('button')
+  modalBtn.classList.add("modal-btn")
+  modalContainer.classList.add("modal-container")
   modalContainer.style.display = 'block'
   modalNameInput.placeholder = 'Enter name...'
   modalPriceInput.placeholder = 'Enter price...'

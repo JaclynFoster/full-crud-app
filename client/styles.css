@@ -159,6 +159,8 @@ input {
   height: 30px;
   width: 200px;
   box-shadow: 3px 3px 3px 3px rgba(55, 54, 54, 0.7);
+  padding: 5px;
+  margin: 5px;
 }
 #pattern-container {
     display: flex;
@@ -166,6 +168,7 @@ input {
     justify-content: space-between;
     flex-wrap: wrap;
    margin-top: 10px;
+
   
   
 }
@@ -220,3 +223,11 @@ label {
 a {
   margin-top: 5px;
 }
+
+.modal-btn {
+  padding: 5px;
+  border-radius: 14px;
+  margin-left: 10px;
+}
+
+
